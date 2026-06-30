@@ -331,7 +331,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom" style="background: transparent;">
           <div class="container">
             <div class="row footer-bottom-row">
               <div class="col-12 col-md-6 col-lg-6">
