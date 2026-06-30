@@ -220,3 +220,8 @@ body.has-hero .header-1.header-sticky.scrolled-past-header {
 .about-cta { display: flex; align-items: center; justify-content: flex-start; gap: 20px; flex-wrap: wrap; }
 .cta-experience { font-size: 16px; color: var(--color-foreground); }
 .cta-experience strong { color: #0071c1; }
+
+/* Soft elevation on the footer "Contact Us" consultation form card */
+.footer-contact .contact-box {
+  box-shadow: 0 24px 60px rgba(28, 37, 57, 0.14) !important;
+}
