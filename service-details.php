@@ -61,7 +61,7 @@ include 'head.php';
                   </div>
                 </div>
 
-                <h3 class="heading text-28" data-aos="fade-up">What we cover</h3>
+                <h3 class="heading text-36" data-aos="fade-up">What we cover</h3>
                 <div class="row scope-grid">
                   <?php foreach ($svc['fields'] as $f): ?>
                   <div class="col-12 col-md-6" data-aos="fade-up">
