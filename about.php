@@ -35,7 +35,7 @@ include 'head.php';
             <div class="col-lg-6 col-12">
               <div class="media-wrap" data-aos="zoom-in-up">
                 <img
-                  src="assets/img/image-text/img1.png"
+                  src="assets/img/image-text/img1.jpg"
                   width="992"
                   height="863"
                   loading="lazy"
