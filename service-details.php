@@ -2,7 +2,7 @@
 require __DIR__ . '/services-data.php';
 $serviceSlug = $serviceSlug ?? 'corporate-advisory';
 $svc = $serviceDetails[$serviceSlug] ?? reset($serviceDetails);
-$pageTitle = $svc['title'] . ' — Bluesky Advisors';
+$pageTitle = $svc['title'] . ' in Dubai — Bluesky Advisors';
 $pageDescription = $svc['meta'];
 include 'head.php';
 ?>
@@ -26,7 +26,7 @@ include 'head.php';
             width="1920"
             height="80"
             loading="eager"
-            alt="Page Banner Image"
+            alt="Bluesky Advisors — Dubai"
           >
         </picture>
       </div>
@@ -85,13 +85,13 @@ include 'head.php';
                           width="1000"
                           height="962"
                           loading="lazy"
-                          alt="image"
+                          alt="Bluesky Advisors advisors at work in Dubai"
                         >
                       </div>
                     </div>
                     <div class="col-xl-6 col-lg-12 col-md-6 col-12">
                       <div class="choose-us-desc">
-                        <h2 class="heading text-36">Why Choose us</h2>
+                        <h2 class="heading text-36">Why Choose Us</h2>
                         <p class="text text-18">
                           Businesses choose Bluesky Advisors for senior,
                           hands-on guidance and advice they can act on.
@@ -135,6 +135,21 @@ include 'head.php';
           </div>
         </div>
       </div>
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": <?php echo json_encode($svc['title']); ?>,
+        "serviceType": <?php echo json_encode($svc['title']); ?>,
+        "provider": {
+          "@type": "ProfessionalService",
+          "name": "Bluesky Advisors DMCC",
+          "url": "https://bluesky-advisors.com"
+        },
+        "areaServed": { "@type": "Country", "name": "United Arab Emirates" },
+        "description": <?php echo json_encode($svc['meta']); ?>
+      }
+      </script>
     </main>
 <?php include 'footer.php'; ?>
 <?php include 'foot.php'; ?>

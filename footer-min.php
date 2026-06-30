@@ -76,7 +76,7 @@
                       data-aos-delay="50"
                       data-aos-anchor=".contact-box"
                     >
-                      Get free business consultation today
+                      Get a free business consultation today
                     </h2>
                     <p
                       class="text text-18"
@@ -84,8 +84,7 @@
                       data-aos-delay="80"
                       data-aos-anchor=".contact-box"
                     >
-                      Need help with a project, have a question about our work?
-                      have a question about our work? We're here to help you.
+                      Have a question about a project or how we work? We are here to help.
                     </p>
                     <ul class="text-lists list-unstyled">
                       <li class="text-item text text-18 aos-init aos-animate" data-aos="fade-up">

@@ -19,7 +19,7 @@
             width="1920"
             height="520"
             loading="eager"
-            alt="Page Banner Image"
+            alt="Bluesky Advisors — Dubai"
           >
         </picture>
         <div class="page-banner-content">
@@ -71,7 +71,7 @@
         <div class="page-project-details mt-100">
             <div class="container">
                 <div class="project-media radius18" data-aos="fade-up">
-                    <img src="assets/img/project/project-details/1.jpg" width="1400" height="637" loading="lazy" alt="Image">
+                    <img src="assets/img/project/project-details/1.jpg" width="1400" height="637" loading="lazy" alt="Bluesky Advisors project">
                 </div>
             </div>
             <div class="container">
@@ -88,12 +88,12 @@
                                     <div class="row product-grid">
                                         <div class="col-md-6 col-12">
                                             <div class="project-img radius18" data-aos="fade-up">
-                                                <img src="assets/img/project/project-details/2.jpg" width="800" height="791" loading="lazy" alt="Image">
+                                                <img src="assets/img/project/project-details/2.jpg" width="800" height="791" loading="lazy" alt="Bluesky Advisors project">
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <div class="project-img radius18" data-aos="fade-up" data-aos-delay="100">
-                                                <img src="assets/img/project/project-details/3.jpg" width="800" height="791" loading="lazy" alt="Image">
+                                                <img src="assets/img/project/project-details/3.jpg" width="800" height="791" loading="lazy" alt="Bluesky Advisors project">
                                             </div>
                                         </div>
                                     </div>
@@ -166,7 +166,7 @@
                                         width="1000"
                                         height="929"
                                         loading="lazy"
-                                        alt="image"
+                                        alt="Bluesky Advisors project"
                                     >
                                     </div>
                                     <div class="service-contact-content">

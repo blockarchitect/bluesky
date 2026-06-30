@@ -1,6 +1,6 @@
 <?php
 $pageTitle = "Terms & Conditions — Bluesky Advisors";
-$pageDescription = "Terms and conditions and privacy statement for the Bluesky Advisors DMCC website.";
+$pageDescription = "Terms & Conditions and privacy statement for the Bluesky Advisors DMCC website — how we operate, the limits of the information we provide, and how to reach us.";
 include 'head.php';
 ?>
 <?php include 'header.php'; ?>
@@ -23,7 +23,7 @@ include 'head.php';
             width="1920"
             height="80"
             loading="eager"
-            alt="Page Banner Image"
+            alt="Bluesky Advisors — Dubai"
           >
         </picture>
       </div>

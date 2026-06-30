@@ -215,3 +215,8 @@ body.has-hero .header-1.header-sticky.scrolled-past-header {
 /* Rounded edges on feature images (Who We Are on index, etc.) */
 .media-wrap { border-radius: 18px; overflow: hidden; }
 .media-wrap img { border-radius: 18px; display: block; width: 100%; }
+
+/* About intro CTA: button + inline experience label */
+.about-cta { display: flex; align-items: center; justify-content: flex-start; gap: 20px; flex-wrap: wrap; }
+.cta-experience { font-size: 16px; color: var(--color-foreground); }
+.cta-experience strong { color: #0071c1; }

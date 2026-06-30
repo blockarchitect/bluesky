@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Services — Corporate, Transaction & Growth Advisory | Bluesky Advisors";
+$pageTitle = "Advisory Services in Dubai — Bluesky Advisors";
 $pageDescription = "Explore Bluesky Advisors' services: corporate, transaction, real estate, growth, IT and HR advisory for businesses in Dubai and the wider region.";
 $bodyClass = "has-hero";
 include 'head.php';
@@ -308,7 +308,7 @@ $services = [
               width="1920"
               height="1000"
               loading="eager"
-              alt="Hero Image"
+              alt="Dubai business district skyline at night"
             >
           </picture>
           <div class="slider-content">

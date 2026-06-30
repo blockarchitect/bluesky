@@ -23,7 +23,7 @@ include 'head.php';
             width="1920"
             height="80"
             loading="eager"
-            alt="Page Banner Image"
+            alt="Bluesky Advisors — Dubai"
           >
         </picture>
       </div>
@@ -92,7 +92,15 @@ include 'head.php';
                 >
                   For more than 20 years, Bluesky Advisors DMCC has helped
                   businesses of every size navigate change, seize opportunity and
-                  perform — with clear, practical advice at every step.
+                  perform — with clear, practical advice at every step. From our
+                  base in the Dubai Multi Commodities Centre, we work alongside
+                  founders, family businesses and investors across the UAE and the
+                  wider region, bringing corporate, transaction, real estate,
+                  growth, IT and HR advisory together under one roof. Whether you
+                  are setting up, restructuring, raising capital or planning your
+                  next phase of growth, our senior advisors stay hands-on from
+                  first conversation through to execution — turning ambition into
+                  measurable, lasting results.
                 </div>
                 <ul class="text-lists list-unstyled">
                   <li
@@ -213,7 +221,7 @@ include 'head.php';
                     A trusted partner from strategy through execution
                   </li>
                 </ul>
-                <div class="buttons" data-aos="fade-up">
+                <div class="buttons about-cta" data-aos="fade-up">
                   <a
                     href="contact.php"
                     class="button button--primary"
@@ -236,6 +244,7 @@ include 'head.php';
                       </svg>
                     </span>
                   </a>
+                  <span class="cta-experience"><strong>20+ years</strong> of advisory experience</span>
                 </div>
               </div>
             </div>
@@ -248,7 +257,7 @@ include 'head.php';
         <div class="media media-bg">
           <img
             src="assets/img/contact/contact-bg.jpg"
-            alt="choose us background image"
+            alt=""
             width="1920"
             height="887"
             loading="lazy"
@@ -265,7 +274,7 @@ include 'head.php';
                   >
                   <img
                     src="assets/img/why-choose-us/1.jpg"
-                    alt="choose us image"
+                    alt="Bluesky Advisors team at work in Dubai"
                     width="1000"
                     height="742"
                     loading="lazy"

@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "Bluesky Advisors — Corporate & Financial Advisory in Dubai";
+$pageTitle = "Corporate & Financial Advisory in Dubai — Bluesky Advisors";
 $pageDescription = "Bluesky Advisors DMCC is a Dubai-based corporate and financial advisory firm offering corporate, transaction, real estate, growth, IT and HR advisory services.";
 $bodyClass = "has-hero";
 include 'head.php';
@@ -184,7 +184,7 @@ $services = [
               width="1920"
               height="1000"
               loading="eager"
-              alt="Hero Image"
+              alt="Dubai business district skyline at night"
             >
           </picture>
           <div class="slider-content">
@@ -223,7 +223,7 @@ $services = [
                   width="992"
                   height="863"
                   loading="lazy"
-                  alt="Image"
+                  alt="Bluesky Advisors team in Dubai"
                 >
               </div>
             </div>

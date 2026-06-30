@@ -23,7 +23,7 @@ include 'head.php';
             width="1920"
             height="520"
             loading="eager"
-            alt="Page Banner Image"
+            alt="Bluesky Advisors — Dubai"
           >
         </picture>
         <div class="page-banner-content">

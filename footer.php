@@ -18,7 +18,7 @@
                 >
                   <img
                     src="assets/img/contact/contact.jpg"
-                    alt="contact image"
+                    alt="Bluesky Advisors advisor in the office"
                     width="1290"
                     height="1400"
                     loading="lazy"
@@ -81,7 +81,7 @@
                       data-aos-delay="50"
                       data-aos-anchor=".contact-box"
                     >
-                      Get free business consultation today
+                      Get a free business consultation today
                     </h2>
                     <p
                       class="text text-18"
@@ -89,8 +89,7 @@
                       data-aos-delay="80"
                       data-aos-anchor=".contact-box"
                     >
-                      Need help with a project, have a question about our work?
-                      have a question about our work? We're here to help you.
+                      Have a question about a project or how we work? We are here to help.
                     </p>
                   </div>
                   <form

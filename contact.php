@@ -23,7 +23,7 @@ include 'head.php';
             width="1920"
             height="80"
             loading="eager"
-            alt="Page Banner Image"
+            alt="Bluesky Advisors — Dubai"
           >
         </picture>
       </div>
@@ -79,7 +79,7 @@ include 'head.php';
                 </svg>
                 </div>
                 <h2 class="heading text-50" data-aos="fade-up">
-                Let's Build an Awesome Project Together
+                Let's talk about your business
                 </h2>
             </div>
           <div class="contact-box radius18">
@@ -142,7 +142,7 @@ include 'head.php';
                       Make an Appointment
                     </h2>
                     <p class="text text-16" data-aos="fade-up">
-                      Feel free to contact with us, we don't spam your email
+                      Send us a message and we'll get back to you — we never share your details.
                     </p>
                   </div>
                   <form

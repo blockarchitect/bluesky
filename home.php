@@ -25,7 +25,7 @@ include 'head.php';
               width="1920"
               height="1000"
               loading="eager"
-              alt="Hero Image"
+              alt="Dubai business district skyline at night"
             >
           </picture>
           <div class="slider-content">
@@ -426,7 +426,7 @@ include 'head.php';
                   width="992"
                   height="863"
                   loading="lazy"
-                  alt="Image"
+                  alt="Bluesky Advisors"
                 >
               </div>
             </div>
@@ -1523,7 +1523,7 @@ include 'head.php';
                       width="1000"
                       height="707"
                       loading="lazy"
-                      alt="Image"
+                      alt="Bluesky Advisors"
                     >
                   </div>
                 </div>
@@ -1623,7 +1623,7 @@ include 'head.php';
                       width="1000"
                       height="707"
                       loading="lazy"
-                      alt="Image"
+                      alt="Bluesky Advisors"
                     >
                   </div>
                 </div>
@@ -1723,7 +1723,7 @@ include 'head.php';
                       width="1000"
                       height="707"
                       loading="lazy"
-                      alt="Image"
+                      alt="Bluesky Advisors"
                     >
                   </div>
                 </div>
