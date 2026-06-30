@@ -1,6 +1,6 @@
     <!-- Header 1 -->
     <sticky-header data-sticky-type="always">
-      <header class="header-1 header-floating bg-cover" style="background-image: url(assets/img/footer/footer-bg-large.jpg) !important; background-size: cover; background-position: center; background-repeat: no-repeat">
+      <header class="header-1 header-floating">
         <div class="container-fluid">
           <div class="header-grid">
             <a class="header-logo" href="index.html" aria-label="Bluesky Advisors">

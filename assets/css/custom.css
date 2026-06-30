@@ -166,3 +166,22 @@
 @media (max-width: 991px) {
   .service-intro .col-12:first-child { margin-bottom: 28px; }
 }
+
+/* Header: transparent at top (hero shows through), brand-blue on scroll, no border */
+.header-1,
+.header-1.header-floating:hover,
+.header-1.header-sticky.scrolled-past-header {
+  border-bottom: none !important;
+}
+.header-1.header-floating:hover {
+  --color-background: rgba(0, 0, 0, 0) !important;
+  background: transparent !important;
+}
+.header-1.header-sticky.scrolled-past-header {
+  --color-background: rgba(0, 113, 193, 1) !important; /* #0071c1 brand blue */
+  background: rgba(0, 113, 193, 1) !important;
+}
+/* keep the logo legible over both the dark hero and the blue bar */
+.header-1 .header-grid > .header-logo img {
+  filter: brightness(0) invert(1);
+}
