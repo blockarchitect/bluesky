@@ -58,14 +58,18 @@ include 'head.php';
                 </p>
 
                 <h3 class="heading text-28" data-aos="fade-up">What we cover</h3>
-                <ul class="text-lists list-unstyled" data-aos="fade-up">
+                <div class="row scope-grid">
                   <?php foreach ($svc['fields'] as $f): ?>
-                  <li class="text-item text text-18">
-                    <svg class="icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z" fill="CurrentColor"/></svg>
-                    <?php echo $f; ?>
-                  </li>
+                  <div class="col-12 col-md-6" data-aos="fade-up">
+                    <div class="scope-tile">
+                      <span class="scope-tile-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z" fill="currentColor"/></svg>
+                      </span>
+                      <span class="text text-18 fw-500"><?php echo $f; ?></span>
+                    </div>
+                  </div>
                   <?php endforeach; ?>
-                </ul>
+                </div>
 
                 <div class="service-choose-us" data-aos="fade-up">
                   <div class="row service-row">
