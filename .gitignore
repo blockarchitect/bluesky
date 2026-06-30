@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*~
+
+# Environment / secrets (never commit real values)
+.env
+.env.*
+!.env.example
+
+# PHP tooling
+/vendor/
+composer.lock
+
+# Logs & temp
+*.log
+*.cache
+tmp/
