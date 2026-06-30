@@ -1,9 +1,14 @@
-# Bluesky Consulting — Website
+# Bluesky Advisors — Website
 
-Marketing website for **Bluesky Consulting**, a corporate &amp; financial advisory
-firm. Built as a flat-file PHP site: PHP is used only to `include` shared
-partials and to render content from PHP arrays — there is **no database, no form
-backend, and no build step** for the markup.
+Marketing website for **Bluesky Advisors DMCC**, a Dubai-based corporate &amp;
+financial advisory firm. A flat-file PHP site: PHP is used only to `include`
+shared partials and render content from PHP arrays (no database). The contact
+form posts to [Web3Forms](https://web3forms.com), so there is no server-side
+backend. For publishing, [`build.sh`](build.sh) pre-renders the pages to static
+HTML and a GitHub Actions workflow deploys them to GitHub Pages.
+
+> **Taking it live?** See [`GO-LIVE.md`](GO-LIVE.md) for the remaining steps
+> (contact-form key, domain/DNS, real content).
 
 ## Pages
 
