@@ -20,7 +20,9 @@ PARTIALS=(head header header-min footer footer-min foot)
 # Not-ready pages: source kept in the repo but withheld from the published
 # site until real content replaces the template placeholders. Re-enable a page
 # by removing it from this list (and restoring its inbound links).
-UNPUBLISHED=(project project-details terms)
+# `home` is the design reference whose modules were merged into index.php (the
+# live homepage); it stays in the repo but is not published.
+UNPUBLISHED=(project project-details terms home)
 
 skip_page() {
   local name="$1"

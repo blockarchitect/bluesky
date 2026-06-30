@@ -95,14 +95,14 @@ include 'head.php';
                   class="heading text-50"
                   data-aos="fade-up"
                 >
-                  Redesigning business for solutions
+                  Built around your business goals
                 </h2>
                 <div
                   class="text text-18"
                   data-aos="fade-up"
                 >
-                  Our mission is to empowers businesses off all size to thrive
-                  in an our businesses ever changing marketplace.
+                  We help businesses of every size navigate change, seize
+                  opportunity and perform — with clear, practical advice at every step.
                 </div>
                 <ul class="text-lists list-unstyled">
                   <li
@@ -142,7 +142,7 @@ include 'head.php';
                         </clipPath>
                       </defs>
                     </svg>
-                    Integrate a diverse range of ideas
+                    Corporate, transaction and growth advisory under one roof
                   </li>
                   <li
                     class="text-item text text-18"
@@ -181,7 +181,7 @@ include 'head.php';
                         </clipPath>
                       </defs>
                     </svg>
-                    Deliver the highest quality outcomes
+                    Practical guidance grounded in real business outcomes
                   </li>
                   <li
                     class="text-item text text-18"
@@ -220,7 +220,7 @@ include 'head.php';
                         </clipPath>
                       </defs>
                     </svg>
-                    Believe in powerof implication
+                    A trusted partner from strategy through execution
                   </li>
                 </ul>
                 <div class="buttons" data-aos="fade-up">

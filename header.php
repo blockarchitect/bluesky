@@ -9,7 +9,7 @@
             <drawer-menu>
               <nav class="header-nav drawer-menu">
                 <div class="d-lg-none header-nav-headings">
-                  <a class="header-logo" href="home.php" aria-label="Bluesky Advisors">
+                  <a class="header-logo" href="index.php" aria-label="Bluesky Advisors">
                     <img src="assets/img/logo.png" alt="Bluesky Advisors Logo" width="189" height="32" loading="lazy">
                   </a>
                   <drawer-opener class="svg-wrapper menu-close" data-drawer=".drawer-menu">
@@ -21,7 +21,7 @@
                 </div>
                 <ul class="header-menu list-unstyled">
                   <li class="nav-item">
-                    <a class="menu-link menu-link-main menu-accrodion" href="home.php"> Home </a>
+                    <a class="menu-link menu-link-main menu-accrodion" href="index.php"> Home </a>
                   </li>
                   <li class="nav-item">
                     <a class="menu-link menu-link-main" href="about.php"> About </a>

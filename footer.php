@@ -195,7 +195,7 @@
                   data-aos="fade-up"
                   data-aos-anchor=".footer-top"
                 >
-                  <a class="footer-logo" href="home.php" aria-label="Bluesky Advisors">
+                  <a class="footer-logo" href="index.php" aria-label="Bluesky Advisors">
                     <img
                       src="assets/img/logo-white.png"
                       alt="Bluesky Logo"
