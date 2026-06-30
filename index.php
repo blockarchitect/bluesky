@@ -480,7 +480,7 @@ $services = [
         </div>
       </div>
       <!-- Text Banner -->
-      <div class="text-banner">
+      <div class="text-banner mt-100">
         <div class="container-fluid">
           <div class="text-banner-inner radius18">
             <div class="section-headings">
