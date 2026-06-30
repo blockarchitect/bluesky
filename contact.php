@@ -1,6 +1,9 @@
 <?php
 $pageTitle = "Contact Bluesky Advisors — Dubai";
 $pageDescription = "Get in touch with Bluesky Advisors DMCC in Dubai. Email contact@bluesky-advisors.com to discuss corporate and financial advisory for your business.";
+// Web3Forms access key (public, safe to commit). Create a free key tied to
+// contact@bluesky-advisors.com at https://web3forms.com and paste it here.
+$web3formsKey = "YOUR_WEB3FORMS_ACCESS_KEY";
 include 'head.php';
 ?>
 <?php include 'header.php'; ?>
@@ -116,7 +119,18 @@ include 'head.php';
                       Feel free to contact with us, we don't spam your email
                     </p>
                   </div>
-                  <form action="#" class="form contact-form" data-aos="fade-up">
+                  <form
+                    id="contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    class="form contact-form"
+                    data-aos="fade-up"
+                  >
+                    <input type="hidden" name="access_key" value="<?php echo $web3formsKey; ?>">
+                    <input type="hidden" name="subject" value="New enquiry from bluesky-advisors.com">
+                    <input type="hidden" name="from_name" value="Bluesky Advisors Website">
+                    <!-- Honeypot: hidden from people, rejects bots that tick it -->
+                    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
                     <div class="field">
                       <label for="ContactForm-name" class="visually-hidden">
                         Your Name
@@ -137,7 +151,7 @@ include 'head.php';
                       <input
                         id="ContactForm-email"
                         class="text-16"
-                        type="text"
+                        type="email"
                         placeholder="Email Here *"
                         name="email"
                         required
@@ -194,6 +208,49 @@ include 'head.php';
                       </button>
                     </div>
                   </form>
+                  <div
+                    id="contact-form-result"
+                    class="text text-16"
+                    style="margin-top: 16px"
+                    role="status"
+                    aria-live="polite"
+                  ></div>
+                  <script>
+                    (function () {
+                      var form = document.getElementById("contact-form");
+                      var result = document.getElementById("contact-form-result");
+                      if (!form || !result) return;
+                      form.addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        result.textContent = "Sending…";
+                        fetch(form.action, {
+                          method: "POST",
+                          headers: { Accept: "application/json" },
+                          body: new FormData(form),
+                        })
+                          .then(function (r) {
+                            return r.json().then(function (j) {
+                              return { ok: r.ok, data: j };
+                            });
+                          })
+                          .then(function (res) {
+                            if (res.ok && res.data.success) {
+                              result.textContent =
+                                "Thanks — your message has been sent. We'll be in touch shortly.";
+                              form.reset();
+                            } else {
+                              result.textContent =
+                                (res.data && res.data.message) ||
+                                "Something went wrong. Please email contact@bluesky-advisors.com.";
+                            }
+                          })
+                          .catch(function () {
+                            result.textContent =
+                              "Network error. Please email contact@bluesky-advisors.com.";
+                          });
+                      });
+                    })();
+                  </script>
                 </div>
               </div>
             </div>

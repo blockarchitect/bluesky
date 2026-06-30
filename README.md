@@ -67,3 +67,12 @@ sass assets/scss/style.scss assets/css/style.css
   out of commits.
 - No secrets in the repo. If a backend/integration is added later, put config in
   a gitignored `.env` and document the variable **names** in `.env.example`.
+
+## Contact form
+
+The contact form posts to [Web3Forms](https://web3forms.com) (no backend
+required, works on static hosting). To activate it: create a free access key
+tied to `contact@bluesky-advisors.com`, then set `$web3formsKey` near the top of
+`contact.php`. The key is public (it only routes mail to your address), so it is
+safe to commit. Submissions are sent over AJAX with an inline confirmation
+message; a hidden honeypot field blocks bots.
