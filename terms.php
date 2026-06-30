@@ -1,4 +1,8 @@
-<?php include 'head.php'; ?>
+<?php
+$pageTitle = "Terms & Conditions — Bluesky Advisors";
+$pageDescription = "Terms and conditions and privacy statement for the Bluesky Advisors DMCC website.";
+include 'head.php';
+?>
 <?php include 'header.php'; ?>
 <?php $contact = 1; ?>
     <!-- Main -->
@@ -31,106 +35,96 @@
             <div class="card-blog-list" data-aos="fade-up">
               <div class="card-blog-content">
                 <h2 class="card-blog-heading heading text-50 text-center">
-                  Our Privacy Policy
+                  Terms &amp; Conditions
                 </h2>
 
                 <div class="blog-description">
                   <p>
-                    This website is operated by Consulo. Throughout the site,
-                    the terms “we”, “us” and “our” refer to Consulo. Consulo
-                    offers this website, including all information, tools and
-                    services available from this site to you, the user,
-                    conditioned upon your acceptance of all terms, conditions,
-                    policies and notices stated here.
+                    This website is operated by Bluesky Advisors DMCC
+                    (&ldquo;Bluesky Advisors&rdquo;, &ldquo;we&rdquo;,
+                    &ldquo;us&rdquo; or &ldquo;our&rdquo;). By accessing or using
+                    this website you agree to these Terms &amp; Conditions. If you
+                    do not agree, please do not use the site.
+                  </p>
+                  <p><em>Last updated: July 2026</em></p>
+
+                  <h3>About us</h3>
+                  <p>
+                    Bluesky Advisors DMCC is a corporate and financial advisory
+                    firm registered in the Dubai Multi Commodities Centre (DMCC)
+                    free zone, Dubai, United Arab Emirates. This website provides
+                    general information about our firm and the services we offer.
                   </p>
 
+                  <h3>Use of this website</h3>
                   <p>
-                    Please read these Terms of Service carefully before
-                    accessing or using our website. By accessing or using any
-                    part of the site, you agree to be bound by these Terms of
-                    Service. If you do not agree to all the terms and conditions
-                    of this agreement, then you may not access the website or
-                    use any services. If these Terms of Service are considered
-                    an offer, acceptance is expressly limited to these Terms of
-                    Service.
+                    You may view and use the content on this site for lawful
+                    information purposes. You agree not to misuse the site,
+                    attempt to gain unauthorised access to it, or use it in any
+                    way that breaches applicable laws or the rights of others.
                   </p>
 
-                  <h3>What is Lorem Ipsum?</h3>
+                  <h3>No professional advice</h3>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
+                    Information on this website is general in nature and does not
+                    constitute corporate, financial, legal, tax or investment
+                    advice, nor an offer or solicitation of any kind. Any
+                    engagement for advisory services is governed by a separate
+                    written agreement. You should not act on information provided
+                    here without obtaining advice specific to your circumstances.
                   </p>
 
-                  <h3>Why do we use it?</h3>
+                  <h3>Intellectual property</h3>
                   <p>
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web
-                    page editors now use Lorem Ipsum as their default model
-                    text, and a search for 'lorem ipsum' will uncover many web
-                    sites still in their infancy. Various versions have evolved
-                    over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
+                    All content on this site &mdash; including text, graphics,
+                    logos and branding &mdash; is owned by or licensed to Bluesky
+                    Advisors DMCC and is protected by applicable intellectual
+                    property laws. You may not reproduce or redistribute it
+                    without our prior written consent.
                   </p>
 
-                  <h3>Where does it come from?</h3>
+                  <h3>Third-party links</h3>
                   <p>
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text. It has roots in a piece of classical Latin literature
-                    from 45 BC, making it over 2000 years old. Richard
-                    McClintock, a Latin professor at Hampden-Sydney College in
-                    Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through
-                    the cites of the word in classical literature, discovered
-                    the undoubtable source. Lorem Ipsum comes from sections
-                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
-                    Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular
-                    during the Renaissance. The first line of Lorem Ipsum,
-                    "Lorem ipsum dolor sit amet..", comes from a line in section
-                    1.10.32.
-                  </p>
-                  <p>
-                    The standard chunk of Lorem Ipsum used since the 1500s is
-                    reproduced below for those interested. Sections 1.10.32 and
-                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
-                    also reproduced in their exact original form, accompanied by
-                    English versions from the 1914 translation by H. Rackham.
+                    Our website may contain links to third-party sites. We are
+                    not responsible for the content, accuracy or practices of any
+                    site we do not operate.
                   </p>
 
+                  <h3>Limitation of liability</h3>
                   <p>
-                    Use both direct conversations and indirect observations to
-                    get visibility into employees challenges and concerns. Use
-                    every opportunity to make clear to employees that you
-                    support and care them. To facilitate regular conversations
-                    between managers and employees, provide.
+                    This website is provided on an &ldquo;as is&rdquo; basis. To
+                    the fullest extent permitted by law, we exclude liability for
+                    any loss or damage arising from use of, or reliance on, this
+                    website or its content.
                   </p>
 
+                  <h3>Privacy</h3>
                   <p>
-                    The third Monday of January is supposed to be the most
-                    depressing day of the year. Whether you believe that or not,
-                    the long nights, cold weather, and trying to keep to new
-                    year resolutions are all probably getting to you a little by
-                    now. To make matters worse many will still be recovering
-                    from their Christmas spending. So how can you make today
+                    We respect your privacy. If you contact us through this
+                    website or by email, we use the information you provide solely
+                    to respond to your enquiry and to provide our services. We do
+                    not sell your personal data. For any privacy request, email
+                    <a href="mailto:contact@bluesky-advisors.com">contact@bluesky-advisors.com</a>.
                   </p>
 
+                  <h3>Governing law</h3>
                   <p>
-                    Vast numbers of employees now work remotely, and it's too
-                    late to develop a set of remote-work policies if you didn't
-                    already have one. But there are ways to make the remote-work
-                    experience productive and engaging for employees
+                    These Terms are governed by the laws of the Emirate of Dubai
+                    and the applicable federal laws of the United Arab Emirates.
+                    Any dispute is subject to the jurisdiction of the relevant
+                    DMCC and Dubai courts.
+                  </p>
+
+                  <h3>Changes to these terms</h3>
+                  <p>
+                    We may update these Terms from time to time. The current
+                    version is always available on this page.
+                  </p>
+
+                  <h3>Contact</h3>
+                  <p>
+                    Questions about these Terms? Email
+                    <a href="mailto:contact@bluesky-advisors.com">contact@bluesky-advisors.com</a>.
                   </p>
                 </div>
               </div>

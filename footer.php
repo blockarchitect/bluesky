@@ -287,6 +287,13 @@
                   Copyright ©<span class="current-year"></span> Bluesky Advisors DMCC
                 </div>
               </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <ul class="footer-menu footer-policies list-unstyled">
+                  <li>
+                    <a href="terms.php" class="text text-16 link" aria-label="Terms and Conditions"> Terms &amp; Conditions </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

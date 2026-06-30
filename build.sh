@@ -22,7 +22,7 @@ PARTIALS=(head header header-min footer footer-min foot)
 # by removing it from this list (and restoring its inbound links).
 # `home` is the design reference whose modules were merged into index.php (the
 # live homepage); it stays in the repo but is not published.
-UNPUBLISHED=(project project-details terms home)
+UNPUBLISHED=(project project-details home)
 
 skip_page() {
   local name="$1"
