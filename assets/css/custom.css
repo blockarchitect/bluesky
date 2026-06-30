@@ -203,3 +203,15 @@ body.has-hero .header-1.header-sticky.scrolled-past-header {
 .service-intro h1 { margin-bottom: 30px; }
 .service-intro p { margin-bottom: 24px; }
 .service-intro .button { margin-top: 20px; }
+
+/* About intro (image removed): full width, centered heading, left list & button */
+.about-intro .content { text-align: center; }
+.about-intro .content .text-lists,
+.about-intro .content .buttons { text-align: left; }
+
+/* Values cards: full width now that the side image is gone */
+.choose-bottom-cards { margin-inline-end: 0 !important; padding-inline-end: 0 !important; }
+
+/* Rounded edges on feature images (Who We Are on index, etc.) */
+.media-wrap { border-radius: 18px; overflow: hidden; }
+.media-wrap img { border-radius: 18px; display: block; width: 100%; }

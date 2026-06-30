@@ -29,21 +29,10 @@ include 'head.php';
       </div>
 
       <!-- Image Text -->
-      <div class="image-text mt-100">
+      <div class="image-text mt-100 about-intro">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-12">
-              <div class="media-wrap" data-aos="zoom-in-up">
-                <img
-                  src="assets/img/image-text/img1.jpg"
-                  width="992"
-                  height="863"
-                  loading="lazy"
-                  alt="Image"
-                >
-              </div>
-            </div>
-            <div class="col-lg-6 col-12">
+          <div class="row">
+            <div class="col-12">
               <div class="content section-headings">
                 <div
                   class="subheading text-20 subheading-bg"
@@ -533,7 +522,7 @@ include 'head.php';
           <div class="choose-bottom">
             <div class="choose-bottom-cards">
               <div class="row">
-                <div class="col-12 col-lg-6 col-xl-4" data-aos="fade-up">
+                <div class="col-12 col-md-4" data-aos="fade-up">
                   <div class="card-icon-text card-icon-text-horizontal">
                     <div class="svg-wrapper">
                       <svg
@@ -575,7 +564,7 @@ include 'head.php';
                   </div>
                 </div>
                 <div
-                  class="col-12 col-lg-6 col-xl-4"
+                  class="col-12 col-md-4"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
@@ -631,7 +620,7 @@ include 'head.php';
                   </div>
                 </div>
                 <div
-                  class="col-12 col-lg-6 col-xl-4"
+                  class="col-12 col-md-4"
                   data-aos="fade-up"
                   data-aos-delay="200"
                 >
@@ -672,19 +661,6 @@ include 'head.php';
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="choose-media-absolute radius18"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <img
-                src="assets/img/why-choose-us/2.jpg"
-                alt="choose image"
-                width="800"
-                height="834"
-                loading="lazy"
-              >
             </div>
           </div>
         </div>
