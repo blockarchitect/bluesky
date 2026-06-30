@@ -101,8 +101,9 @@ include 'head.php';
                   class="text text-18"
                   data-aos="fade-up"
                 >
-                  We help businesses of every size navigate change, seize
-                  opportunity and perform — with clear, practical advice at every step.
+                  For more than 20 years, Bluesky Advisors DMCC has helped
+                  businesses of every size navigate change, seize opportunity and
+                  perform — with clear, practical advice at every step.
                 </div>
                 <ul class="text-lists list-unstyled">
                   <li
@@ -331,11 +332,13 @@ include 'head.php';
                     </svg>
                   </div>
                   <h2 class="heading text-50" data-aos="fade-up">
-                    Supporting Growth on a Global Scale
+                    Two decades of trusted advisory
                   </h2>
                   <p class="text text-18" data-aos="fade-up">
-                    We provide dependable and tailored consulting services that
-                    help your business navigate challenges, seize opportunities.
+                    With over 20 years of experience, we have guided founders,
+                    family businesses and investors across the UAE and the wider
+                    region — pairing senior, hands-on expertise with advice you
+                    can act on at every stage of growth.
                   </p>
                   <div class="buttons" data-aos="fade-up">
                     <a
@@ -519,7 +522,7 @@ include 'head.php';
                           fill="#1C2539"
                         />
                       </svg>
-                      <span class="text-abs">25</span>
+                      <span class="text-abs">20</span>
                     </div>
                   </div>
                 </div>
@@ -564,8 +567,9 @@ include 'head.php';
                     <div class="content">
                       <h2 class="heading text-20 fw-700">Our Mission</h2>
                       <p class="text text-16">
-                        Our mission is push engage boundaries, enga audiences,
-                        and driv engage.
+                        To help businesses make confident, well-informed
+                        decisions — combining deep advisory expertise with a
+                        genuine commitment to every client's success.
                       </p>
                     </div>
                   </div>
@@ -620,8 +624,8 @@ include 'head.php';
                     <div class="content">
                       <h2 class="heading text-20 fw-700">Our Vision</h2>
                       <p class="text text-16">
-                        Our mission is push engage boundaries, enga audiences,
-                        and driv engage.
+                        To be the advisory partner businesses in the region trust
+                        first — known for clarity, integrity and results that last.
                       </p>
                     </div>
                   </div>
@@ -658,10 +662,11 @@ include 'head.php';
                       </svg>
                     </div>
                     <div class="content">
-                      <h2 class="heading text-20 fw-700">Our Awards</h2>
+                      <h2 class="heading text-20 fw-700">Our Values</h2>
                       <p class="text text-16">
-                        Our mission is push engage boundaries, enga audiences,
-                        and driv engage.
+                        Integrity, rigour and partnership. We give honest advice,
+                        do the analysis properly, and stay invested in the
+                        outcome — not just the engagement.
                       </p>
                     </div>
                   </div>
