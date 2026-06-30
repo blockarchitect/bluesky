@@ -323,17 +323,17 @@
                   <div class="widget-heading heading text-22">Services</div>
                   <ul class="footer-menu list-unstyled">
                     <li>
-                      <a href="service-detail.php" class="text text-16 link" aria-label="Corporate Advisory">
+                      <a href="service-details.php" class="text text-16 link" aria-label="Corporate Advisory">
                         Corporate Advisory
                       </a>
                     </li>
                     <li>
-                      <a href="service-detail.php" class="text text-16 link" aria-label="Transaction Advisory">
+                      <a href="service-details.php" class="text text-16 link" aria-label="Transaction Advisory">
                         Transaction Advisory
                       </a>
                     </li>
                     <li>
-                      <a href="service-detail.php" class="text text-16 link" aria-label="Real Estate Advisory">
+                      <a href="service-details.php" class="text text-16 link" aria-label="Real Estate Advisory">
                         Real Estate Advisory
                       </a>
                     </li>
@@ -345,17 +345,17 @@
                   <div class="widget-heading heading text-22">&nbsp;</div>
                   <ul class="footer-menu list-unstyled">
                     <li>
-                      <a href="service-detail.php" class="text text-16 link" aria-label="Growth Advisory" >
+                      <a href="service-details.php" class="text text-16 link" aria-label="Growth Advisory" >
                         Growth Advisory
                       </a>
                     </li>
                     <li>
-                      <a href="service-detail.php" class="text text-16 link" aria-label="IT Advisory">
+                      <a href="service-details.php" class="text text-16 link" aria-label="IT Advisory">
                         IT Advisory
                       </a>
                     </li>
                     <li>
-                      <a href="service-detail.php" class="text text-16 link" aria-label="HR Advisory">
+                      <a href="service-details.php" class="text text-16 link" aria-label="HR Advisory">
                         HR Advisory
                       </a>
                     </li>

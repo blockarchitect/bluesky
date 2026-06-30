@@ -74,7 +74,7 @@ $services = [
                 ]
               ],
               [
-                "title" => 'Transaction Advisory ',
+                "title" => 'Transaction Advisory',
                 "icon"=> '
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +245,7 @@ $services = [
                 ]
               ],
               [
-                "title" => 'HR Advisory ',
+                "title" => 'HR Advisory',
                 "icon"=> '
                     <svg
                       class="icon-40"

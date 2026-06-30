@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
-    <title>Bluesky Consulting</title>
+    <title>Bluesky Advisors</title>
     <link
       rel="shortcut icon"
       href="assets/img/favicon.png"
@@ -15,9 +15,9 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
    >
     <meta name="view-transition" content="same-origin">
-    <meta name="theme-color" content="Red">
+    <meta name="theme-color" content="#1c2539">
     <meta property="og:site_name" content="Bluesky Advisors">
-    <meta property="og:title" content="Creative Business Consulting">
+    <meta property="og:title" content="Bluesky Advisors — Corporate &amp; Financial Advisory">
     <meta
       property="og:description"
       content="Build Brand And Grow Business With Bluesky"

@@ -145,11 +145,11 @@
                         Email Us
                       </h2>
                       <a 
-                        href="mailto:consulo@example.com" 
+                        href="mailto:contact@bluesky-advisors.com" 
                         class="text text-20"
                         aria-label="Email us"
                       >
-                        consulo@example.com
+                        contact@bluesky-advisors.com
                       </a>
                     </div>
                   </div>
