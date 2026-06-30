@@ -50,8 +50,9 @@ include 'head.php';
                   </div>
                   <div class="col-12 col-lg-6" data-aos="fade-up">
                     <div class="details-media radius18">
+                      <?php $heroImg = file_exists(__DIR__ . "/assets/img/service/$serviceSlug.jpg") ? "assets/img/service/$serviceSlug.jpg" : "assets/img/service/s1.jpg"; ?>
                       <img
-                        src="assets/img/service/s1.jpg"
+                        src="<?php echo $heroImg; ?>"
                         width="1000"
                         height="596"
                         loading="eager"
