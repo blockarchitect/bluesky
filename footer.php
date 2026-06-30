@@ -234,8 +234,8 @@
       <?php endif; ?>
       <!-- Footer Main -->
       <div
-        class="footer-main bg-cover"
-        style="background-image: url(assets/img/footer/footer-bg-large.jpg)"
+        class="footer-main"
+        style="background: #1c2539"
       >
         <div class="footer-top">
           <div class="container">
