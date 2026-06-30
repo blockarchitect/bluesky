@@ -90,4 +90,4 @@ $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
     }
     </script>
   </head>
-<body>
+<body class="<?php echo $bodyClass ?? ""; ?>">

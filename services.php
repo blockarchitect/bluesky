@@ -1,6 +1,7 @@
 <?php
 $pageTitle = "Services — Corporate, Transaction & Growth Advisory | Bluesky Advisors";
 $pageDescription = "Explore Bluesky Advisors' services: corporate, transaction, real estate, growth, IT and HR advisory for businesses in Dubai and the wider region.";
+$bodyClass = "has-hero";
 include 'head.php';
 ?>
 <?php include 'header.php'; ?>

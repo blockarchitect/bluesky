@@ -167,22 +167,29 @@
   .service-intro .col-12:first-child { margin-bottom: 28px; }
 }
 
-/* Header: transparent at top (hero shows through), brand-blue on scroll, no border */
+/* Header: no borders anywhere (incl. the nav's vertical borders) */
 .header-1,
-.header-1.header-floating:hover,
-.header-1.header-sticky.scrolled-past-header,
-.header-1 .header-grid {
+.header-1 .header-grid,
+.header-1 .header-nav {
   border: none !important;
 }
-.header-1.header-floating:hover {
-  --color-background: rgba(0, 0, 0, 0) !important;
+/* Default (pages without a hero): flat navy bar */
+.header-1 {
+  --color-background: rgba(28, 37, 57, 1) !important; /* #1c2539 navy */
+  background: rgba(28, 37, 57, 1) !important;
+}
+/* Hero pages (home, services): transparent at top so the hero shows through */
+body.has-hero .header-1,
+body.has-hero .header-1.header-floating:hover {
+  --color-background: rgba(28, 37, 57, 0) !important;
   background: transparent !important;
 }
-.header-1.header-sticky.scrolled-past-header {
-  --color-background: rgba(0, 113, 193, 1) !important; /* #0071c1 brand blue */
-  background: rgba(0, 113, 193, 1) !important;
+/* ...and navy once scrolled past the hero */
+body.has-hero .header-1.header-sticky.scrolled-past-header {
+  --color-background: rgba(28, 37, 57, 1) !important;
+  background: rgba(28, 37, 57, 1) !important;
 }
-/* keep the logo legible over both the dark hero and the blue bar */
+/* keep the logo legible on the navy bar */
 .header-1 .header-grid > .header-logo img {
   filter: brightness(0) invert(1);
 }

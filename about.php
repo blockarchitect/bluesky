@@ -258,7 +258,7 @@ include 'head.php';
       <div class="why-choose-us bg-transparent mt-100 section-padding">
         <div class="media media-bg">
           <img
-            src="assets/img/why-choose-us/bg.jpg"
+            src="assets/img/contact/contact-bg.jpg"
             alt="choose us background image"
             width="1920"
             height="887"
