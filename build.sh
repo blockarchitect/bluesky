@@ -57,7 +57,7 @@ done
 echo "==> Copy assets"
 [ -d assets ] && cp -R assets "$OUT/"
 # Top-level static files referenced directly (favicon, etc.)
-for extra in robots.txt favicon.ico CNAME; do
+for extra in robots.txt favicon.ico site.webmanifest CNAME; do
   [ -f "$extra" ] && cp "$extra" "$OUT/"
 done
 
