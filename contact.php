@@ -88,7 +88,36 @@ include 'head.php';
           <div class="contact-box radius18">
             <div class="row product-grid justify-content-between">
               <div class="col-12 col-lg-6 col-contact-content">
+                <!-- Map -->
+                <div class="google-map">
+                  <div class="iframe-wrapper">
+                    <iframe
+                      src="https://maps.google.com/maps?q=Jumeirah%20Lakes%20Towers%20Dubai&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                      title="Bluesky Advisors — Jumeirah Lakes Towers, Dubai"
+                      width="1920"
+                      height="600"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
                 <div class="contact-info-list">
+                  <div class="card-icon-text card-icon-text-horizontal" data-aos="fade-up">
+                    <div class="svg-wrapper">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                    </div>
+                    <div class="content">
+                      <h2 class="heading text-16 fw-500">
+                        Our Office
+                      </h2>
+                      <p class="text text-20">
+                        Unit No: BA1078, DMCC Business Center,<br>
+                        Jumeirah Lakes Towers, Dubai &ndash; UAE
+                      </p>
+                    </div>
+                  </div>
                   <div class="card-icon-text card-icon-text-horizontal" data-aos="fade-up">
                     <div class="svg-wrapper">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z"/></svg>

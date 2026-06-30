@@ -71,7 +71,7 @@ $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
       "@type": "ProfessionalService",
       "name": "Bluesky Advisors DMCC",
       "url": "<?= $baseUrl ?>",
-      "logo": "<?= $baseUrl ?>/assets/img/logo.png",
+      "logo": "<?= $baseUrl ?>/assets/img/logo-white.png",
       "image": "<?= $ogImage ?>",
       "email": "contact@bluesky-advisors.com",
       "description": "Dubai-based corporate and financial advisory firm offering corporate, transaction, real estate, growth, IT and HR advisory services.",
