@@ -481,7 +481,7 @@ $services = [
       </div>
       <!-- Text Banner -->
       <div class="text-banner mt-100">
-        <div class="container-fluid">
+        <div class="container">
           <div class="text-banner-inner radius18">
             <div class="section-headings">
               <div class="subheading text-20 subheading-bg" data-aos="fade-up">
