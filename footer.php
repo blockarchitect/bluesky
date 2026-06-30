@@ -183,7 +183,7 @@
       <?php endif; ?>
       <!-- Footer Main -->
       <div
-        class="footer-main bg-contain"
+        class="footer-main bg-cover"
         style="background-image: url(assets/img/footer/footer-bg-large.jpg)"
       >
         <div class="footer-top">
