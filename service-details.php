@@ -36,26 +36,30 @@ include 'head.php';
           <div class="row">
             <div class="col-12">
               <div class="service-details-content">
-                <div class="details-media radius18" data-aos="fade-up">
-                  <img
-                    src="assets/img/service/s1.jpg"
-                    width="1000"
-                    height="596"
-                    loading="lazy"
-                    alt="image"
-                  >
+                <div class="row align-items-center service-intro">
+                  <div class="col-12 col-lg-6" data-aos="fade-up">
+                    <div class="details-media radius18">
+                      <img
+                        src="assets/img/service/s1.jpg"
+                        width="1000"
+                        height="596"
+                        loading="eager"
+                        alt="<?php echo $svc['title']; ?>"
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6" data-aos="fade-up">
+                    <h1 class="heading text-50"><?php echo $svc['title']; ?></h1>
+                    <p class="text text-18"><?php echo $svc['lead']; ?></p>
+                    <p class="text text-18"><?php echo $svc['body']; ?></p>
+                    <a href="contact.php" class="button button--primary" aria-label="Get in touch">
+                      Get in touch
+                      <span class="svg-wrapper">
+                        <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z" fill="currentColor"/></svg>
+                      </span>
+                    </a>
+                  </div>
                 </div>
-                <h2 class="heading text-50" data-aos="fade-up">
-                  <?php echo $svc['title']; ?>
-                </h2>
-
-                <p class="text text-18" data-aos="fade-up">
-                  <?php echo $svc['lead']; ?>
-                </p>
-
-                <p class="text text-18" data-aos="fade-up">
-                  <?php echo $svc['body']; ?>
-                </p>
 
                 <h3 class="heading text-28" data-aos="fade-up">What we cover</h3>
                 <div class="row scope-grid">
