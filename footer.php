@@ -4,8 +4,8 @@
 <?php if($contact) : ?>
       <!-- Footer Contact Form -->
       <div
-        class="footer-contact bg-contain"
-        style="background-image: url(assets/img/contact/contact-bg.jpg)"
+        class="footer-contact"
+        style="background: #ffffff"
       >
         <div class="container">
           <div class="contact-box radius18">
