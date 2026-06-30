@@ -3,10 +3,10 @@
       <header class="header-1 header-floating">
         <div class="container-fluid">
           <div class="header-grid">
-            <a class="header-logo" href="index.php" aria-label="Consulo">
+            <a class="header-logo" href="index.php" aria-label="Bluesky Advisors">
               <img
                 src="assets/img/logo-white.png"
-                alt="Consulo Logo"
+                alt="Bluesky Advisors Logo"
                 height="32"
                 style="margin: 20px 0;"
               >

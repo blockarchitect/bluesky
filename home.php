@@ -52,7 +52,7 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>welcome to Consulo</span>
+                  <span>welcome to Bluesky Advisors</span>
                   <svg
                     class="icon icon-14"
                     xmlns="http://www.w3.org/2000/svg"
@@ -1483,7 +1483,7 @@
                     </div>
                     <div class="buttons" data-aos="fade-up">
                       <a
-                        href="project.html"
+                        href="about.php"
                         class="button button--primary"
                         aria-label="More About Us"
                       >
@@ -1583,7 +1583,7 @@
                     </div>
                     <div class="buttons" data-aos="fade-up">
                       <a
-                        href="project.html"
+                        href="about.php"
                         class="button button--primary"
                         aria-label="More About Us"
                       >
@@ -1683,7 +1683,7 @@
                     </div>
                     <div class="buttons" data-aos="fade-up">
                       <a
-                        href="project.html"
+                        href="about.php"
                         class="button button--primary"
                         aria-label="More About Us"
                       >

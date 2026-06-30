@@ -3,14 +3,14 @@
       <header class="header-1 header-floating">
         <div class="container-fluid">
           <div class="header-grid">
-            <a class="header-logo" href="index.html" aria-label="Consulo">
-              <img src="assets/img/logo-white.png" alt="Consulo Logo" width="189" height="32">
+            <a class="header-logo" href="index.html" aria-label="Bluesky Advisors">
+              <img src="assets/img/logo-white.png" alt="Bluesky Advisors Logo" width="189" height="32">
             </a>
             <drawer-menu>
               <nav class="header-nav drawer-menu">
                 <div class="d-lg-none header-nav-headings">
-                  <a class="header-logo" href="home.php" aria-label="Consulo">
-                    <img src="assets/img/logo.png" alt="Consulo Logo" width="189" height="32" loading="lazy">
+                  <a class="header-logo" href="home.php" aria-label="Bluesky Advisors">
+                    <img src="assets/img/logo.png" alt="Bluesky Advisors Logo" width="189" height="32" loading="lazy">
                   </a>
                   <drawer-opener class="svg-wrapper menu-close" data-drawer=".drawer-menu">
                     <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -16,9 +16,16 @@ HOST="127.0.0.1"
 # Partials are included by pages; they are not standalone pages themselves.
 PARTIALS=(head header header-min footer footer-min foot)
 
-is_partial() {
+# Not-ready pages: source kept in the repo but withheld from the published
+# site until real content replaces the template placeholders. Re-enable a page
+# by removing it from this list (and restoring its inbound links).
+UNPUBLISHED=(project project-details terms)
+
+skip_page() {
   local name="$1"
-  for p in "${PARTIALS[@]}"; do [[ "$name" == "$p" ]] && return 0; done
+  for p in "${PARTIALS[@]}" "${UNPUBLISHED[@]}"; do
+    [[ "$name" == "$p" ]] && return 0
+  done
   return 1
 }
 
@@ -39,7 +46,7 @@ done
 echo "==> Render pages"
 for f in *.php; do
   name="${f%.php}"
-  is_partial "$name" && continue
+  skip_page "$name" && continue
   curl -fsS "http://$HOST:$PORT/$f" -o "$OUT/$name.html"
   echo "    $f -> $name.html"
 done

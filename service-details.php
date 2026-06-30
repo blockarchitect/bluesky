@@ -217,8 +217,8 @@
                       </h2>
                       <a
                         class="icon-contact"
-                        href="tel:+971.0000.00000"
-                        aria-label="Call us at +971.00000.000 number"
+                        href="contact.php"
+                        aria-label="Contact us"
                       >
                         <svg
                           width="44"
@@ -235,19 +235,17 @@
                             stroke-linejoin="round"
                           />
                         </svg>
-                        <span class="visually-hidden"
-                          >Call us at +971.00000.0000 number</span
-                        >
+                        <span class="visually-hidden">Contact us</span>
                       </a>
                       <div class="contact-text text text-16">
                         Need help? Talk to an expert
                       </div>
                       <a
                         class="contact-number heading text-24"
-                        href="tel:+12345.6789.333"
-                        aria-label="Call us at +12345.6789.333 number"
+                        href="mailto:contact@bluesky-advisors.com"
+                        aria-label="Email us"
                       >
-                        +971.00000.0000
+                        contact@bluesky-advisors.com
                       </a>
                     </div>
                   </div>
