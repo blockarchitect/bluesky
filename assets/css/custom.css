@@ -170,8 +170,9 @@
 /* Header: transparent at top (hero shows through), brand-blue on scroll, no border */
 .header-1,
 .header-1.header-floating:hover,
-.header-1.header-sticky.scrolled-past-header {
-  border-bottom: none !important;
+.header-1.header-sticky.scrolled-past-header,
+.header-1 .header-grid {
+  border: none !important;
 }
 .header-1.header-floating:hover {
   --color-background: rgba(0, 0, 0, 0) !important;
