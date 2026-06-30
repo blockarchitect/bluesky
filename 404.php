@@ -1,4 +1,9 @@
-<?php include 'head.php'; ?>
+<?php
+$pageTitle = "Page Not Found — Bluesky Advisors";
+$pageDescription = "The page you're looking for can't be found. Explore Bluesky Advisors' corporate and financial advisory services instead.";
+$noindex = true;
+include 'head.php';
+?>
 <?php include 'header.php'; ?>
     <!-- Main -->
     <main>

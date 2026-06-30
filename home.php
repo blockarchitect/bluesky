@@ -1,4 +1,8 @@
-<?php include 'head.php'; ?>
+<?php
+$pageTitle = "Bluesky Advisors — Trusted Corporate & Financial Advisors in Dubai";
+$pageDescription = "Partner with Bluesky Advisors DMCC in Dubai for corporate advisory, transaction support and business growth strategy tailored to your goals.";
+include 'head.php';
+?>
 <?php include 'header.php'; ?>
 <?php $contact = 1; ?>
     <!-- Main -->

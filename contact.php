@@ -1,4 +1,8 @@
-<?php include 'head.php'; ?>
+<?php
+$pageTitle = "Contact Bluesky Advisors — Dubai";
+$pageDescription = "Get in touch with Bluesky Advisors DMCC in Dubai. Email contact@bluesky-advisors.com to discuss corporate and financial advisory for your business.";
+include 'head.php';
+?>
 <?php include 'header.php'; ?>
 <?php $contact = 0; ?>
     <!-- Main -->

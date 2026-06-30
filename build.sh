@@ -12,6 +12,7 @@ set -euo pipefail
 OUT="_site"
 PORT="8910"
 HOST="127.0.0.1"
+BASE_URL="https://bluesky-advisors.com"
 
 # Partials are included by pages; they are not standalone pages themselves.
 PARTIALS=(head header header-min footer footer-min foot)
@@ -64,6 +65,20 @@ find "$OUT" -name '*.html' -print0 | while IFS= read -r -d '' page; do
   perl -0pi -e 's/service-detail\.php/service-details.php/g;
                 s/(href|src)=(["\x27])([^"\x27]*?)\.php([#?][^"\x27]*)?\2/$1=$2$3.html$4$2/g' "$page"
 done
+
+echo "==> Generate sitemap.xml"
+# One <url> per published page (404 excluded; index maps to the site root).
+{
+  echo '<?xml version="1.0" encoding="UTF-8"?>'
+  echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+  for html in "$OUT"/*.html; do
+    base="$(basename "$html")"
+    [ "$base" = "404.html" ] && continue
+    if [ "$base" = "index.html" ]; then loc="$BASE_URL/"; else loc="$BASE_URL/$base"; fi
+    echo "  <url><loc>$loc</loc></url>"
+  done
+  echo '</urlset>'
+} > "$OUT/sitemap.xml"
 
 # GitHub Pages serves 404.html automatically for missing paths.
 echo "==> Done. Output in $OUT/"

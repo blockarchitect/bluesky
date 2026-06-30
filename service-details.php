@@ -1,4 +1,8 @@
-<?php include 'head.php'; ?>
+<?php
+$pageTitle = "Advisory Services — Bluesky Advisors";
+$pageDescription = "A closer look at how Bluesky Advisors supports your business with tailored corporate and financial advisory services.";
+include 'head.php';
+?>
 <?php include 'header.php'; ?>
 <?php $contact = 1; ?>
     <!-- Main -->

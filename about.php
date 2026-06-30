@@ -1,4 +1,8 @@
-<?php include 'head.php'; ?>
+<?php
+$pageTitle = "About Bluesky Advisors — Dubai Corporate Advisory Firm";
+$pageDescription = "Meet Bluesky Advisors DMCC, a Dubai corporate and financial advisory firm helping businesses structure, grow and perform with expert guidance.";
+include 'head.php';
+?>
 <?php include 'header.php'; ?>
 <?php $contact = 1; ?>
     <!-- Main -->
@@ -680,7 +684,8 @@
           </div>
         </div>
       </div>
-
+
+
     </main>
 <?php include 'footer.php'; ?>
 <?php include 'foot.php'; ?>
