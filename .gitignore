@@ -25,3 +25,6 @@ composer.lock
 *.log
 *.cache
 tmp/
+
+# Build output (rendered by build.sh / CI; deployed to Pages)
+/_site/
