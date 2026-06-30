@@ -226,11 +226,11 @@ include 'head.php';
                 </ul>
                 <div class="buttons" data-aos="fade-up">
                   <a
-                    href="about.html"
+                    href="contact.php"
                     class="button button--primary"
-                    aria-label="More About Us"
+                    aria-label="Get in touch"
                   >
-                    More About Us
+                    Get in Touch
                     <span class="svg-wrapper">
                       <svg
                         class="icon-20"
@@ -342,11 +342,11 @@ include 'head.php';
                   </p>
                   <div class="buttons" data-aos="fade-up">
                     <a
-                      href="about.html"
+                      href="contact.php"
                       class="button button--primary"
-                      aria-label="More About Us"
+                      aria-label="Get in touch"
                     >
-                      More About Us
+                      Get in Touch
                       <span class="svg-wrapper">
                         <svg
                           class="icon-20"
