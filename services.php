@@ -143,7 +143,7 @@ $services = [
                 ]
               ],
               [
-                "title" => 'Growth Advisor',
+                "title" => 'Growth Advisory',
                 "icon"=> '
                     <svg
                       class="icon-40"
@@ -344,7 +344,7 @@ $services = [
              <div class="col-xl-4 col-md-6 col-12" data-aos="fade-up">
                 <a
                   class="multicolumn-card"
-                  href="#"
+                  href="<?php echo strtolower(str_replace(' ', '-', trim($s['title']))); ?>.php"
                   aria-label="View Service Details"
                 >
                   <div class="card-icon">

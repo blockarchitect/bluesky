@@ -15,14 +15,14 @@ HOST="127.0.0.1"
 BASE_URL="https://bluesky-advisors.com"
 
 # Partials are included by pages; they are not standalone pages themselves.
-PARTIALS=(head header header-min footer footer-min foot)
+PARTIALS=(head header header-min footer footer-min foot services-data)
 
 # Not-ready pages: source kept in the repo but withheld from the published
 # site until real content replaces the template placeholders. Re-enable a page
 # by removing it from this list (and restoring its inbound links).
 # `home` is the design reference whose modules were merged into index.php (the
 # live homepage); it stays in the repo but is not published.
-UNPUBLISHED=(project project-details home)
+UNPUBLISHED=(project project-details home service-details)
 
 skip_page() {
   local name="$1"

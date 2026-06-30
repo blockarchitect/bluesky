@@ -88,7 +88,7 @@ $services = [
                 ]
               ],
               [
-                "title" => 'Growth Advisor',
+                "title" => 'Growth Advisory',
                 "icon"=> '
                     <svg class="icon-40" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" >
                       <g clip-path="url(#clip0_9105_30181)">
@@ -446,7 +446,7 @@ $services = [
              <div class="col-xl-4 col-md-6 col-12" data-aos="fade-up">
                 <a
                   class="multicolumn-card"
-                  href="services.php"
+                  href="<?php echo strtolower(str_replace(' ', '-', trim($s['title']))); ?>.php"
                   aria-label="View Service Details"
                 >
                   <div class="card-icon">

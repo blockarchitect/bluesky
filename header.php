@@ -36,22 +36,22 @@
                     <div class="menu-absolute header-submenu submenu-color">
                       <ul class="list-unstyled">
                         <li class="nav-item">
-                          <a class="menu-link" href="service-details.php">Corporate Advisory</a>
+                          <a class="menu-link" href="corporate-advisory.php">Corporate Advisory</a>
                         </li>
                         <li class="nav-item">
-                          <a class="menu-link" href="service-details.php">Transaction Advisory </a>
+                          <a class="menu-link" href="transaction-advisory.php">Transaction Advisory </a>
                         </li>
                         <li class="nav-item">
-                          <a class="menu-link" href="service-details.php">Real Estate Advisory</a>
+                          <a class="menu-link" href="real-estate-advisory.php">Real Estate Advisory</a>
                         </li>
                         <li class="nav-item">
-                          <a class="menu-link" href="service-details.php">Growth Advisory</a>
+                          <a class="menu-link" href="growth-advisory.php">Growth Advisory</a>
                         </li>
                         <li class="nav-item">
-                          <a class="menu-link" href="service-details.php">IT Advisory</a>
+                          <a class="menu-link" href="it-advisory.php">IT Advisory</a>
                         </li>
                         <li class="nav-item">
-                          <a class="menu-link" href="service-details.php">HR Advisory </a>
+                          <a class="menu-link" href="hr-advisory.php">HR Advisory </a>
                         </li>             
                       </ul>
                     </div>

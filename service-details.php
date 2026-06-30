@@ -1,6 +1,9 @@
 <?php
-$pageTitle = "Advisory Services — Bluesky Advisors";
-$pageDescription = "A closer look at how Bluesky Advisors supports your business with tailored corporate and financial advisory services.";
+require __DIR__ . '/services-data.php';
+$serviceSlug = $serviceSlug ?? 'corporate-advisory';
+$svc = $serviceDetails[$serviceSlug] ?? reset($serviceDetails);
+$pageTitle = $svc['title'] . ' — Bluesky Advisors';
+$pageDescription = $svc['meta'];
 include 'head.php';
 ?>
 <?php include 'header.php'; ?>
@@ -85,120 +88,18 @@ include 'head.php';
                       Services List
                     </h2>
                     <ul class="secvice-categories list-unstyled">
+                      <?php foreach ($serviceDetails as $slug => $sb): ?>
                       <li>
                         <a
-                          class="secvice-category subheading subheading-bg active text-18 fw-400"
-                          href="service-details.php"
-                          aria-label="blog category"
+                          class="secvice-category subheading subheading-bg text-18 fw-400<?php echo $slug === $serviceSlug ? ' active' : ''; ?>"
+                          href="<?php echo $slug; ?>.php"
+                          aria-label="<?php echo $sb['title']; ?>"
                         >
-                          Corporate Advisory
-                          <svg
-                            viewBox="0 0 18 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z"
-                              fill="currentColor"
-                            />
-                          </svg>
+                          <?php echo $sb['title']; ?>
+                          <svg viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z" fill="currentColor"/></svg>
                         </a>
                       </li>
-                      <li>
-                        <a
-                          class="secvice-category subheading subheading-bg text-18 fw-400"
-                          href="service-details.php"
-                          aria-label="blog category"
-                        >
-                          Transaction Advisory 
-                          <svg
-                            viewBox="0 0 18 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="secvice-category subheading subheading-bg text-18 fw-400"
-                          href="service-details.php"
-                          aria-label="blog category"
-                        >
-                          Real Estate Advisory
-                          <svg
-                            viewBox="0 0 18 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="secvice-category subheading subheading-bg text-18 fw-400"
-                          href="service-details.php"
-                          aria-label="blog category"
-                        >
-                          Growth Advisory
-                          <svg
-                            viewBox="0 0 18 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="secvice-category subheading subheading-bg text-18 fw-400"
-                          href="service-details.php"
-                          aria-label="blog category"
-                        >
-                          IT Advisory
-                          <svg
-                            viewBox="0 0 18 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          class="secvice-category subheading subheading-bg text-18 fw-400"
-                          href="service-details.php"
-                          aria-label="blog category"
-                        >
-                          HR Advisory 
-                          <svg
-                            viewBox="0 0 18 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M14.6895 7.25095H0.75C0.551088 7.25095 0.360322 7.32997 0.21967 7.47062C0.0790178 7.61127 0 7.80203 0 8.00095C0 8.19986 0.0790178 8.39063 0.21967 8.53128C0.360322 8.67193 0.551088 8.75095 0.75 8.75095H14.6895L9.219 14.2199C9.07817 14.3608 8.99905 14.5518 8.99905 14.7509C8.99905 14.9501 9.07817 15.1411 9.219 15.2819C9.35983 15.4228 9.55084 15.5019 9.75 15.5019C9.94916 15.5019 10.1402 15.4228 10.281 15.2819L17.031 8.53195C17.1008 8.46228 17.1563 8.37951 17.1941 8.2884C17.2319 8.19728 17.2513 8.0996 17.2513 8.00095C17.2513 7.9023 17.2319 7.80462 17.1941 7.7135C17.1563 7.62238 17.1008 7.53962 17.031 7.46995L10.281 0.719947C10.1402 0.579117 9.94916 0.5 9.75 0.5C9.55084 0.5 9.35983 0.579117 9.219 0.719947C9.07817 0.860777 8.99905 1.05178 8.99905 1.25095C8.99905 1.45011 9.07817 1.64112 9.219 1.78195L14.6895 7.25095Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </a>
-                      </li>
+                      <?php endforeach; ?>
                     </ul>
                   </div>
                   <div
@@ -268,25 +169,26 @@ include 'head.php';
                   >
                 </div>
                 <h2 class="heading text-50" data-aos="fade-up">
-                  Business Innovation
+                  <?php echo $svc['title']; ?>
                 </h2>
 
                 <p class="text text-18" data-aos="fade-up">
-                  Continually myocardinate holistic mindshare with client-based
-                  web services. Assertively e-enable a catalysts for change
-                  before tested markets. maintain wireless scenarios after for
-                  intermandated applications. Conveniently revolutionary vectors
-                  through future-proof manufactured products. Enthusiastically
-                  transform distinctive collaboration.
+                  <?php echo $svc['lead']; ?>
                 </p>
 
                 <p class="text text-18" data-aos="fade-up">
-                  Intrinsicly coordinate multifunctional functionalities
-                  reliable potentialities. Objectively envisioneer high in
-                  convergence through collaborative networks. Interactively
-                  generate B2C e-tailers for reliabl business data restore fully
-                  researched through resource maximizing results.
+                  <?php echo $svc['body']; ?>
                 </p>
+
+                <h3 class="heading text-28" data-aos="fade-up">What we cover</h3>
+                <ul class="text-lists list-unstyled" data-aos="fade-up">
+                  <?php foreach ($svc['fields'] as $f): ?>
+                  <li class="text-item text text-18">
+                    <svg class="icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z" fill="CurrentColor"/></svg>
+                    <?php echo $f; ?>
+                  </li>
+                  <?php endforeach; ?>
+                </ul>
 
                 <div class="service-choose-us" data-aos="fade-up">
                   <div class="row service-row">
@@ -305,83 +207,16 @@ include 'head.php';
                       <div class="choose-us-desc">
                         <h2 class="heading text-36">Why Choose us</h2>
                         <p class="text text-18">
-                          Catalysts for change before fully tested markets are
-                          maintain wireless scenarios after applications
-                          predominate revolutionary.
+                          Businesses choose Bluesky Advisors for senior,
+                          hands-on guidance and advice they can act on.
                         </p>
                         <ul class="text-lists list-unstyled">
+                          <?php foreach ($serviceWhyChoose as $w): ?>
                           <li class="text-item" data-aos="fade-up">
-                            <svg
-                              class="icon-24"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z"
-                                fill="CurrentColor"
-                              />
-                            </svg>
-                            <div class="text text-18 fw-600">
-                              Future among us
-                            </div>
+                            <svg class="icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z" fill="CurrentColor"/></svg>
+                            <div class="text text-18 fw-600"><?php echo $w; ?></div>
                           </li>
-                          <li class="text-item" data-aos="fade-up">
-                            <svg
-                              class="icon-24"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z"
-                                fill="CurrentColor"
-                              />
-                            </svg>
-                            <div class="text text-18 fw-600">
-                              Make a Deal with Our Company
-                            </div>
-                          </li>
-                          <li class="text-item" data-aos="fade-up">
-                            <svg
-                              class="icon-24"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z"
-                                fill="CurrentColor"
-                              />
-                            </svg>
-                            <div class="text text-18 fw-600">
-                              Contact with Our Help Desk
-                            </div>
-                          </li>
-                          <li class="text-item" data-aos="fade-up">
-                            <svg
-                              class="icon-24"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M17.9999 6.99486L16.5899 5.58594L10.2499 11.9211L11.6599 13.33L17.9999 6.99486ZM22.2399 5.58594L11.6599 16.1578L7.47991 11.991L6.06991 13.3999L11.6599 18.9857L23.6599 6.99486L22.2399 5.58594ZM0.409912 13.3999L5.99991 18.9857L7.40991 17.5767L1.82991 11.991L0.409912 13.3999Z"
-                                fill="CurrentColor"
-                              />
-                            </svg>
-                            <div class="text text-18 fw-600">
-                              Ready to Use Solar Energy
-                            </div>
-                          </li>
+                          <?php endforeach; ?>
                         </ul>
                       </div>
                     </div>
@@ -389,163 +224,25 @@ include 'head.php';
                 </div>
 
                 <p class="text text-18" data-aos="fade-up">
-                  Long established fact that a reader will be distracted by the
-                  readable content of a page when at its layout. The point of
-                  using is that it has a more ess normal distribution Long fact
-                  that a reader will be distracted by the readable content of a
-                  page when looking at its layout. The point of using is that it
-                  has a more less normal distribution Long established fact that
-                  a reader will be distracted by the readable content of a page
-                  when looking at its layout. The point of using is that it has
-                  a mores normal fact that a reader will be distracted by the
-                  readable content.
+                  Every business is different. Tell us where you want to take
+                  yours, and we will tailor our support to fit — get in touch to
+                  start the conversation.
                 </p>
 
                 <faq-accordion class="service-faq">
+                  <?php foreach ($serviceFaqs as $faq): ?>
                   <div class="accordion-block" data-aos="fade-up">
                     <div class="accordion-opener heading text-24">
-                      What Services Does Your IT Solutions Business Offer?
-                      <svg
-                        class="icon icon-24"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_9088_8345)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12.7083 15.7044C12.5208 15.8919 12.2665 15.9972 12.0013 15.9972C11.7362 15.9972 11.4818 15.8919 11.2943 15.7044L5.63732 10.0474C5.54181 9.95517 5.46563 9.84482 5.41322 9.72282C5.36081 9.60081 5.33322 9.46959 5.33207 9.33681C5.33092 9.20404 5.35622 9.07236 5.4065 8.94946C5.45678 8.82656 5.53103 8.71491 5.62492 8.62102C5.71882 8.52713 5.83047 8.45287 5.95337 8.40259C6.07626 8.35231 6.20794 8.32701 6.34072 8.32816C6.4735 8.32932 6.60472 8.3569 6.72672 8.40931C6.84873 8.46172 6.95907 8.5379 7.05132 8.63341L12.0013 13.5834L16.9513 8.63341C17.1399 8.45125 17.3925 8.35046 17.6547 8.35274C17.9169 8.35502 18.1677 8.46019 18.3531 8.64559C18.5385 8.831 18.6437 9.08182 18.646 9.34401C18.6483 9.60621 18.5475 9.85881 18.3653 10.0474L12.7083 15.7044Z"
-                            fill="CurrentColor"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath>
-                            <rect width="24" height="24" fill="CurrentColor" />
-                          </clipPath>
-                        </defs>
-                      </svg>
+                      <?php echo $faq['q']; ?>
+                      <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.7083 15.7044C12.5208 15.8919 12.2665 15.9972 12.0013 15.9972C11.7362 15.9972 11.4818 15.8919 11.2943 15.7044L5.63732 10.0474C5.54181 9.95517 5.46563 9.84482 5.41322 9.72282C5.36081 9.60081 5.33322 9.46959 5.33207 9.33681C5.33092 9.20404 5.35622 9.07236 5.4065 8.94946C5.45678 8.82656 5.53103 8.71491 5.62492 8.62102C5.71882 8.52713 5.83047 8.45287 5.95337 8.40259C6.07626 8.35231 6.20794 8.32701 6.34072 8.32816C6.4735 8.32932 6.60472 8.3569 6.72672 8.40931C6.84873 8.46172 6.95907 8.5379 7.05132 8.63341L12.0013 13.5834L16.9513 8.63341C17.1399 8.45125 17.3925 8.35046 17.6547 8.35274C17.9169 8.35502 18.1677 8.46019 18.3531 8.64559C18.5385 8.831 18.6437 9.08182 18.646 9.34401C18.6483 9.60621 18.5475 9.85881 18.3653 10.0474L12.7083 15.7044Z" fill="CurrentColor"/></svg>
                     </div>
                     <div class="accordion-content">
                       <div class="accordion-content-inner text text-18">
-                        Nor is there anyone who loves or pursues or desires to
-                        obtain pain of itself, because which toil and pain can
-                        procuresteady steady.The point of using is that it has a
-                        mores normal fact that a reader will be distracted by
-                        the readable content.
+                        <?php echo $faq['a']; ?>
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-block" data-aos="fade-up">
-                    <div class="accordion-opener heading text-24">
-                      What types of financial challenges?
-                      <svg
-                        class="icon icon-24"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_9088_8345)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12.7083 15.7044C12.5208 15.8919 12.2665 15.9972 12.0013 15.9972C11.7362 15.9972 11.4818 15.8919 11.2943 15.7044L5.63732 10.0474C5.54181 9.95517 5.46563 9.84482 5.41322 9.72282C5.36081 9.60081 5.33322 9.46959 5.33207 9.33681C5.33092 9.20404 5.35622 9.07236 5.4065 8.94946C5.45678 8.82656 5.53103 8.71491 5.62492 8.62102C5.71882 8.52713 5.83047 8.45287 5.95337 8.40259C6.07626 8.35231 6.20794 8.32701 6.34072 8.32816C6.4735 8.32932 6.60472 8.3569 6.72672 8.40931C6.84873 8.46172 6.95907 8.5379 7.05132 8.63341L12.0013 13.5834L16.9513 8.63341C17.1399 8.45125 17.3925 8.35046 17.6547 8.35274C17.9169 8.35502 18.1677 8.46019 18.3531 8.64559C18.5385 8.831 18.6437 9.08182 18.646 9.34401C18.6483 9.60621 18.5475 9.85881 18.3653 10.0474L12.7083 15.7044Z"
-                            fill="CurrentColor"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath>
-                            <rect width="24" height="24" fill="CurrentColor" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                    <div class="accordion-content">
-                      <div class="accordion-content-inner text text-18">
-                        Nor is there anyone who loves or pursues or desires to
-                        obtain pain of itself, because which toil and pain can
-                        procuresteady steady.The point of using is that it has a
-                        mores normal fact that a reader will be distracted by
-                        the readable content.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-block" data-aos="fade-up">
-                    <div class="accordion-opener heading text-24">
-                      What are the payment methods?
-                      <svg
-                        class="icon icon-24"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_9088_8345)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12.7083 15.7044C12.5208 15.8919 12.2665 15.9972 12.0013 15.9972C11.7362 15.9972 11.4818 15.8919 11.2943 15.7044L5.63732 10.0474C5.54181 9.95517 5.46563 9.84482 5.41322 9.72282C5.36081 9.60081 5.33322 9.46959 5.33207 9.33681C5.33092 9.20404 5.35622 9.07236 5.4065 8.94946C5.45678 8.82656 5.53103 8.71491 5.62492 8.62102C5.71882 8.52713 5.83047 8.45287 5.95337 8.40259C6.07626 8.35231 6.20794 8.32701 6.34072 8.32816C6.4735 8.32932 6.60472 8.3569 6.72672 8.40931C6.84873 8.46172 6.95907 8.5379 7.05132 8.63341L12.0013 13.5834L16.9513 8.63341C17.1399 8.45125 17.3925 8.35046 17.6547 8.35274C17.9169 8.35502 18.1677 8.46019 18.3531 8.64559C18.5385 8.831 18.6437 9.08182 18.646 9.34401C18.6483 9.60621 18.5475 9.85881 18.3653 10.0474L12.7083 15.7044Z"
-                            fill="CurrentColor"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath>
-                            <rect width="24" height="24" fill="CurrentColor" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                    <div class="accordion-content">
-                      <div class="accordion-content-inner text text-18">
-                        Nor is there anyone who loves or pursues or desires to
-                        obtain pain of itself, because which toil and pain can
-                        procuresteady steady.The point of using is that it has a
-                        mores normal fact that a reader will be distracted by
-                        the readable content.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-block" data-aos="fade-up">
-                    <div class="accordion-opener heading text-24">
-                      How fast I get my order?
-                      <svg
-                        class="icon icon-24"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0_9088_8345)">
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12.7083 15.7044C12.5208 15.8919 12.2665 15.9972 12.0013 15.9972C11.7362 15.9972 11.4818 15.8919 11.2943 15.7044L5.63732 10.0474C5.54181 9.95517 5.46563 9.84482 5.41322 9.72282C5.36081 9.60081 5.33322 9.46959 5.33207 9.33681C5.33092 9.20404 5.35622 9.07236 5.4065 8.94946C5.45678 8.82656 5.53103 8.71491 5.62492 8.62102C5.71882 8.52713 5.83047 8.45287 5.95337 8.40259C6.07626 8.35231 6.20794 8.32701 6.34072 8.32816C6.4735 8.32932 6.60472 8.3569 6.72672 8.40931C6.84873 8.46172 6.95907 8.5379 7.05132 8.63341L12.0013 13.5834L16.9513 8.63341C17.1399 8.45125 17.3925 8.35046 17.6547 8.35274C17.9169 8.35502 18.1677 8.46019 18.3531 8.64559C18.5385 8.831 18.6437 9.08182 18.646 9.34401C18.6483 9.60621 18.5475 9.85881 18.3653 10.0474L12.7083 15.7044Z"
-                            fill="CurrentColor"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath>
-                            <rect width="24" height="24" fill="CurrentColor" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </div>
-                    <div class="accordion-content">
-                      <div class="accordion-content-inner text text-18">
-                        Nor is there anyone who loves or pursues or desires to
-                        obtain pain of itself, because which toil and pain can
-                        procuresteady steady.The point of using is that it has a
-                        mores normal fact that a reader will be distracted by
-                        the readable content.
-                      </div>
-                    </div>
-                  </div>
+                  <?php endforeach; ?>
                 </faq-accordion>
               </div>
             </div>
