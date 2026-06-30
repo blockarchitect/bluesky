@@ -1,9 +1,6 @@
 <?php
 $pageTitle = "Contact Bluesky Advisors — Dubai";
 $pageDescription = "Get in touch with Bluesky Advisors DMCC in Dubai. Email contact@bluesky-advisors.com to discuss corporate and financial advisory for your business.";
-// Web3Forms access key (public, safe to commit). Create a free key tied to
-// contact@bluesky-advisors.com at https://web3forms.com and paste it here.
-$web3formsKey = "YOUR_WEB3FORMS_ACCESS_KEY";
 include 'head.php';
 ?>
 <?php include 'header.php'; ?>

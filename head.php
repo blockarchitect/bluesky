@@ -4,6 +4,11 @@ $siteName = 'Bluesky Advisors';
 $baseUrl  = 'https://bluesky-advisors.com';
 $ogImage  = $baseUrl . '/assets/img/banner/page-banner.jpg';
 
+// Web3Forms access key (public, safe to commit) — used by both the contact-page
+// form and the footer "free consultation" form. Create a free key tied to
+// contact@bluesky-advisors.com at https://web3forms.com and paste it here.
+$web3formsKey = $web3formsKey ?? 'YOUR_WEB3FORMS_ACCESS_KEY';
+
 // Per-page values: set $pageTitle / $pageDescription (and $noindex for
 // non-indexable pages) in each page BEFORE `include 'head.php'`. Defaults
 // below cover anything that doesn't.

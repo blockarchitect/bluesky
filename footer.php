@@ -93,7 +93,16 @@
                       have a question about our work? We're here to help you.
                     </p>
                   </div>
-                  <form action="#" class="form contact-form">
+                  <form
+                    id="footer-contact-form"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    class="form contact-form"
+                  >
+                    <input type="hidden" name="access_key" value="<?php echo $web3formsKey; ?>">
+                    <input type="hidden" name="subject" value="Consultation request from bluesky-advisors.com">
+                    <input type="hidden" name="from_name" value="Bluesky Advisors Website">
+                    <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
                     <div
                       class="field w-half"
                       data-aos="fade-right"
@@ -122,7 +131,7 @@
                       <input
                         id="ContactForm-email"
                         class="text text-16"
-                        type="text"
+                        type="email"
                         placeholder="Your Email*"
                         name="email"
                         required
@@ -174,6 +183,49 @@
                       </button>
                     </div>
                   </form>
+                  <div
+                    id="footer-contact-result"
+                    class="text text-16"
+                    style="margin-top: 16px"
+                    role="status"
+                    aria-live="polite"
+                  ></div>
+                  <script>
+                    (function () {
+                      var form = document.getElementById("footer-contact-form");
+                      var result = document.getElementById("footer-contact-result");
+                      if (!form || !result) return;
+                      form.addEventListener("submit", function (e) {
+                        e.preventDefault();
+                        result.textContent = "Sending…";
+                        fetch(form.action, {
+                          method: "POST",
+                          headers: { Accept: "application/json" },
+                          body: new FormData(form),
+                        })
+                          .then(function (r) {
+                            return r.json().then(function (j) {
+                              return { ok: r.ok, data: j };
+                            });
+                          })
+                          .then(function (res) {
+                            if (res.ok && res.data.success) {
+                              result.textContent =
+                                "Thanks — your request has been sent. We'll be in touch shortly.";
+                              form.reset();
+                            } else {
+                              result.textContent =
+                                (res.data && res.data.message) ||
+                                "Something went wrong. Please email contact@bluesky-advisors.com.";
+                            }
+                          })
+                          .catch(function () {
+                            result.textContent =
+                              "Network error. Please email contact@bluesky-advisors.com.";
+                          });
+                      });
+                    })();
+                  </script>
                 </div>
               </div>
             </div>
