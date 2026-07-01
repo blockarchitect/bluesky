@@ -56,7 +56,7 @@ include 'head.php';
                         width="1000"
                         height="596"
                         loading="eager"
-                        alt="<?php echo $svc['title']; ?>"
+                        alt="<?php echo $svc['imageAlt'] ?? $svc['title']; ?>"
                       >
                     </div>
                   </div>
