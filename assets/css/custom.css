@@ -226,14 +226,13 @@ body.has-hero .header-1.header-sticky.scrolled-past-header {
   box-shadow: 0 24px 60px rgba(28, 37, 57, 0.14) !important;
 }
 
-/* About intro value props: 2-column grid (3 rows) */
+/* About intro: paragraph left-aligned; value props in two full-width 50% columns
+   whose left edge lines up with the copy above */
+.about-intro .content > .text-18 { text-align: left; }
 .about-intro .text-lists {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px 44px;
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (max-width: 767px) {
   .about-intro .text-lists { grid-template-columns: 1fr; }
