@@ -1,4 +1,3 @@
 # Memory Index
 
-- [Auto-deploy](auto-deploy.md) — push/deploy without asking for confirmation
-- [Bluesky deploy setup](bluesky-deploy-setup.md) — static build → Pages preview; real domain is a separate untouched EC2 site
+- [Auto-deploy](auto-deploy.md) — push/deploy without asking; live production domain stays hands-off

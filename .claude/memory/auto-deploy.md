@@ -1,14 +1,15 @@
 ---
 name: auto-deploy
-description: User wants pushes/deploys done automatically without asking for confirmation
-metadata: 
+description: Push and deploy this repo without asking; the live production domain stays hands-off
+metadata:
   node_type: memory
   type: feedback
-  originSessionId: 8625b937-3038-47ac-8315-989c870dee37
 ---
 
-For the bluesky repo, deploy without asking. When work is committed and verified, push to `main` and let the GitHub Actions workflow auto-deploy to the Pages preview — do not pause to ask "want me to push?".
+Deploy without asking. Once work is committed and verified, push to `main` and let the Actions workflow publish to the Pages preview — never pause on "want me to push?".
 
-**Why:** The user said "deploy without asking" after repeatedly being asked for push confirmation; they consider verified commits ready to ship.
+**Why:** the user asked for this directly, after being prompted for push confirmation once too often; they treat a verified commit as ready to ship.
 
-**How to apply:** Commit in clean increments, run the build + verification (links resolve, no leaks), then `git push origin main` and confirm the deploy succeeded. Still surface anything genuinely risky or irreversible (e.g. DNS changes, making the repo public) for a decision — this only covers routine pushes/deploys. See [[bluesky-deploy-setup]].
+**How to apply:** commit in clean increments, run `./build.sh` and check the output (links resolve, no placeholder leaks), then `git push origin main` and confirm the run succeeded. This repo's history is direct-to-main — no branch/PR step.
+
+**Carve-out — still ask first:** anything that touches the live `bluesky-advisors.com` production box (DNS records, deploying to EC2, repo visibility). The preview and production are separate deployments; the open go-live decision is tracked in [`GO-LIVE.md`](../../GO-LIVE.md).

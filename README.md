@@ -67,7 +67,8 @@ sass assets/scss/style.scss assets/css/style.css
 
 ## Repository conventions
 
-- Work on a branch; open a PR rather than committing to `main`.
+- Small solo repo: work goes straight to `main`, and pushing auto-deploys the
+  preview (see [`CLAUDE.md`](CLAUDE.md) for the deploy rules).
 - `.DS_Store`, `.env`, editor folders, and `vendor/` are gitignored — keep them
   out of commits.
 - No secrets in the repo. If a backend/integration is added later, put config in
