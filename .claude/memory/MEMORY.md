@@ -1,3 +1,3 @@
 # Memory Index
 
-- [Auto-deploy](auto-deploy.md) — push/deploy without asking; live production domain stays hands-off
+- [Auto-deploy](auto-deploy.md) — why deploying without asking is the standing preference (rule lives in CLAUDE.md)
