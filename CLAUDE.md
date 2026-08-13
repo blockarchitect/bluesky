@@ -17,7 +17,7 @@ symlink — re-link a fresh checkout from the repo root with
 - **Deploying is routine, production is not.** Verified commits go straight to `main` and auto-deploy to
   the Pages preview without asking. Anything touching the live `bluesky-advisors.com` box — DNS, EC2,
   repo visibility — needs an explicit decision first.
-- **Verify by building.** Run `./build.sh` and check the rendered `_site/` before pushing: links resolve
-  and no placeholder copy leaks into published pages.
+- **Verify by building.** `make gate` builds the site and checks the rendered `_site/` — every internal
+  link resolves, no placeholder copy reaches a published page. The pre-commit hook runs it for you.
 - **No invented content.** Team members, client logos, case studies and testimonials stay withheld until
   real material exists — the withheld pages are listed in `UNPUBLISHED` in [`build.sh`](build.sh).

@@ -1,11 +1,13 @@
 ---
 name: auto-deploy
-description: Why this repo deploys without asking — a standing user preference, not an assumption
+description: The deploy-without-asking rule is an explicit user instruction, not an inference
 metadata:
   node_type: memory
   type: feedback
 ---
 
-The "deploy without asking" rule in [`CLAUDE.md`](../../CLAUDE.md) is a preference the user stated outright, after being asked to confirm a push once too often. They treat a verified commit as ready to ship, so a confirmation prompt reads as friction rather than diligence.
+The deploy rules in [`CLAUDE.md`](../../CLAUDE.md) are a standing instruction from the user, not something inferred from this repo's history.
 
-**How to apply:** follow the deploy rules in `CLAUDE.md` — this note only records why they exist. Do not reintroduce "want me to push?" for routine work; the carve-out for the live production box is deliberate and stays.
+The user wants verified work shipped without a confirmation step: for routine work, a "want me to push?" prompt reads as friction rather than diligence. The production carve-out is equally deliberate — preview deploys are routine, the live domain is not.
+
+**How to apply:** take the rules themselves from `CLAUDE.md`. This note exists so nobody reinstates confirmation prompts on the assumption they are being careful.
