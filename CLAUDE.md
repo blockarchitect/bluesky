@@ -6,8 +6,8 @@ built and run; [`GO-LIVE.md`](GO-LIVE.md) tracks what is still needed to take th
 
 **The account method.** The global law is `~/.claude/CLAUDE.md` (auto-loaded; its ⛔ CORE block is
 non-negotiable). The portable method lives in `~/.claude/playbooks/` — `PLAN`, `DOCUMENTATION`,
-`MULTI_AGENT`, `CODE_STRUCTURE` — read the relevant one **before** planning, restructuring docs,
-running agent waves, or shaping a codebase's file layout.
+`MULTI_AGENT`, `CODE_STRUCTURE`, `CODE_STYLE` — read the relevant one **before** planning,
+restructuring docs, running agent waves, shaping a codebase's file layout, or writing comments and checks.
 Project rules (this file) override method defaults; nothing overrides the global law. Memory travels
 **with this repo** in [`.claude/memory/`](.claude/memory/) (committed); the local Claude namespace is a
 symlink — re-link a fresh checkout from the repo root with
